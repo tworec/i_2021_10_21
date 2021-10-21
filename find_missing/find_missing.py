@@ -8,6 +8,9 @@ def find_missing_from_short_array(short_array):
 # array with missing (short_array)      candidate=*[0,len(short_array)]           candidate as missing
 #                                       [ candidate in short_array ] continue
 # comments: the maxval is implied by the length of the short array (n-1) b/c it is a from a zero based list of len n
+# e.g. [ 1, 0, 2, 4, 5 ] len=6
+# remove '0' [ 1, 2, 4, 5 ] len=5 corresponding to max value
+# or remove '5' [ 1, 0, 2, 4 ] len=5 etc
 
     def test_candidate_in_array(candidate, thearray):
         # iterate over array until either end or number seen
