@@ -5,9 +5,9 @@ def find_missing_from_short_array(short_array):
 #  with a cardinality of -1 vs the original set
 #
 # inputs:                               process:                                  output
-# array with missing (short_array)      candidate=*short_array                    candidate as missing
+# array with missing (short_array)      candidate=*[0,len(short_array)]           candidate as missing
 #                                       [ candidate in short_array ] continue
-
+# comments: the maxval is implied by the length of the short array (n-1) b/c it is a from a zero based list of len n
 
     def test_candidate_in_array(candidate, thearray):
         # iterate over array until either end or number seen
