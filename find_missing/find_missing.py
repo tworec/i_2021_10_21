@@ -1,12 +1,13 @@
 
 def find_missing_from_short_array(short_array):
 # pre: short array is a "subset" or 1-short-list from a "set" of integers
-#  from a domain of consecutive integers 0 to some value inclusive
+#  from a domain of consecutive integers 0 to some max value inclusive
 #  with a cardinality of -1 vs the original set
 #
 # inputs:                               process:                                  output
 # array with missing (short_array)      candidate=*[0,len(short_array)]           candidate as missing
 #                                       [ candidate in short_array ] continue
+
 # comments: the maxval is implied by the length of the short array (n-1) b/c it is a from a zero based list of len n
 # e.g. [ 1, 0, 2, 4, 5 ] len=6
 # remove '0' [ 1, 2, 4, 5 ] len=5 corresponding to max value
