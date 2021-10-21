@@ -11,7 +11,7 @@ def find_missing_from_short_array(short_array):
 # comments: the maxval is implied by the cardinality (n) of the short array, or (N-1), b/c it is a from a zero based list of len N
 # e.g. original [ 1, 0, 2, 4, 3, 5 ] len=6, note maxvalue=5
 # remove '0' [ 1, 2, 4, 3, 5 ] len=5 corresponding to max value
-# or remove '5' [ 1, 0, 2, 4, 3 ] len=5 etc
+# or remove '5' [ 1, 0, 2, 4, 3 ] len=5 &c.
 
     def test_candidate_in_array(candidate, thearray):
         # iterate over array until either end or number seen
