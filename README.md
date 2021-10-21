@@ -1,7 +1,8 @@
 # i_2021_10_21
 # linear complexity missing number search
 
-this project implements a linear time complexity search, with constant memory complexity, for a missing number in an array.
+this project implements a linear time complexity search, with constant memory complexity, for a missing number in an array. the max search time grows linearly (1:1) with the size of the array being searched.
+
 the algorithm is defined in find_missing/find_missing.py::find_missing_from_short_array
 
 ## a test set is included in the root directory, which can be run against the find_missing_from_short_array function as follows
