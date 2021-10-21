@@ -44,6 +44,7 @@ loading a json_array of values from stdin
 Searching for missing element in list of length: 10 with a presumed max value of 10 in the theoretical inclusive sequence [0,10]
 the search space is: [0, 1, 2, 4, 5, 6, 7, 8, 9, 10]
 searching for missing element...found...3
+```
 
 ## todo
 perform an exhaustive test on a small set to ensure any missing number would be found
