@@ -1,7 +1,9 @@
 
 def find_missing_from_short_array(short_array):
+# pre: short array is a "subset" from a "set" of integers from 0 to some value inclusive
+# with a cardinality of -1 vs the original set
 # inputs:                               process:                                  output
-# array with missing (short_array)      candidate=*[0,len]                       candidate
+# array with missing (short_array)      candidate=*short_array                   candidate as missing
 #                                       [ candidate in short_array ] continue
 
 
