@@ -8,7 +8,7 @@ def find_missing_from_short_array(short_array):
 # array with missing (short_array)      candidate=*[0,len(short_array)]           candidate as missing
 #                                       [ candidate in short_array ] continue
 
-# comments: the maxval is implied by the cardinality (n) of the short array, or (n-1), b/c it is a from a zero based list of len n
+# comments: the maxval is implied by the cardinality (n) of the short array, or (N-1), b/c it is a from a zero based list of len N
 # e.g. original [ 1, 0, 2, 4, 5 ] len=6, note maxvalue=5
 # remove '0' [ 1, 2, 4, 5 ] len=5 corresponding to max value
 # or remove '5' [ 1, 0, 2, 4 ] len=5 etc
