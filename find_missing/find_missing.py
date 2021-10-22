@@ -12,6 +12,7 @@ def find_missing_from_short_array(short_array):
 # e.g. original [ 1, 0, 2, 4, 3, 5 ] len=6, note maxvalue=5
 # remove '0' [ 1, 2, 4, 3, 5 ] len=5 corresponding to max value
 # or remove '5' [ 1, 0, 2, 4, 3 ] len=5 &c.
+# the instruction count is defined linearly by n + f(n-1) + 1 where f(1)=2 and n is the number of elements in the short list
 
     def test_candidate_in_array(candidate, thearray):
         # iterate over array until either end or number seen
