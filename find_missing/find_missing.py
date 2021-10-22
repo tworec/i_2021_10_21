@@ -38,3 +38,23 @@ def find_missing_from_short_array(short_array):
 
     return candidate
 
+
+def find_missing_number_linear(array):
+    for i, _ in enumerate(array):
+        if i not in array:
+            return i
+    return len(array)
+
+
+def find_missing_number_by_sum(array):
+    n = len(array)
+    # total_sum = n * (n+1) / 2
+    # array_sum = 0
+    # for i in array:
+    #     array_sum += i
+    #
+    # return int(total_sum - array_sum)
+
+    # shorter version
+    return (n * (n+1)) // 2 - sum(array)
+

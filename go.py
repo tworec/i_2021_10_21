@@ -4,8 +4,10 @@ import random
 import fileinput
 import sys
 import json
-from find_missing import find_missing_from_short_array
+from find_missing import find_missing_from_short_array, \
+    find_missing_number_linear, find_missing_number_by_sum
 from random_ import build_random_list_short_one_of_integers_from_zero_up_to_and_including
+from timeit import default_timer as timer
 
 
 
@@ -71,8 +73,27 @@ if __name__ == '__main__':
 
     if len(random_integer_sequence_short_one) <= 11:
         print(f"the search space is: {random_integer_sequence_short_one}")
-    print(f"searching for missing element...", end="")
-    missing_number=find_missing_from_short_array(random_integer_sequence_short_one) 
+    print(f"searching for missing element...")
+    start = timer()
+    missing_number=find_missing_from_short_array(random_integer_sequence_short_one)
+    end = timer()
     print(f"found...{missing_number}")
+    print(f"Original calculation took {end - start} sec.")
+
+    start1 = timer()
+    missing_number = find_missing_number_linear(
+        random_integer_sequence_short_one
+    )
+    end1 = timer()
+    print(f"found again...{missing_number}")
+    print(f"Linear calculation took {end1 - start1} sec.")
+
+    start2 = timer()
+    missing_number = find_missing_number_by_sum(
+        random_integer_sequence_short_one
+    )
+    end2 = timer()
+    print(f"found again...{missing_number}")
+    print(f"Linear (by sum) calculation took {end2 - start2} sec.")
 
 
