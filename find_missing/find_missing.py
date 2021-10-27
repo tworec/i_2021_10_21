@@ -40,8 +40,9 @@ def find_missing_from_short_array(short_array):
 
 
 def find_missing_number_linear(array):
+    hash_set = set(array)
     for i, _ in enumerate(array):
-        if i not in array:
+        if i not in hash_set:
             return i
     return len(array)
 
